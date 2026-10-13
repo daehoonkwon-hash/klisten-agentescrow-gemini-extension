@@ -1,0 +1,25 @@
+{
+  "name": "klisten-agentescrow",
+  "version": "0.1.0",
+  "description": "Read an existing private unfunded draft from your organization.",
+  "mcpServers": {
+    "agentescrow": {
+      "httpUrl": "https://api.klisten.co.kr/mcp/agentescrow",
+      "headers": {
+        "Authorization": "Bearer ${KLISTEN_AGENTESCROW_API_KEY}"
+      },
+      "timeout": 20000,
+      "includeTools": [
+        "agentescrow_draft_get"
+      ]
+    }
+  },
+  "settings": [
+    {
+      "name": "AgentEscrow API key",
+      "description": "Your own dedicated least-privilege key; never enter it in chat.",
+      "envVar": "KLISTEN_AGENTESCROW_API_KEY",
+      "sensitive": true
+    }
+  ]
+}

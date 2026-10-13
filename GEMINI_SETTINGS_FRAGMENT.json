@@ -1,0 +1,9 @@
+{
+  "security": {
+    "environmentVariableRedaction": {
+      "allowed": [
+        "KLISTEN_AGENTESCROW_API_KEY"
+      ]
+    }
+  }
+}
